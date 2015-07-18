@@ -1,0 +1,121 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Invernadero Controlado Remotamente por Android"
+        android:textColor="#55AA33"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Autor: Barroso García, Andrés"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Tesis Final de Máster en Ingeniería Electromecánica, Especialidad Mecatrónica"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Curso 2014-2015"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Escuela Tec. Sup. Ingeniería y Diseño Ind."
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Universidad Politécnica de Madrid"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text=" La idea de este proyecto surge a partir de la Tesis Final de Máster “Puesta en Marcha de un Sistema de medición de Humedad y Temperatura en un Invernadero”, desarrollada por el compañero de máser, Carlos Loor." />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Tras su labor en la construcción de un invernadero, y el control de la temperatura y la humedad, surge la necesidad de poder monitorizar el estado de esas variables de una forma  rápida y cómoda." />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Es así como nace el proyecto ICRA, Invernadero Controlado Remotamente por Android, con el propósito de desarrollar unos servicios que permitan al usuario poder controlar y monitorizar el estado del invernadero desde cualquier punto geográfico. Se ofrece la posibilidad de modificar rangos de trabajo de actuadores, incluso poder visualizar gráficas de evolución de las variables que intervienen en el proceso de crecimiento de la plantación." />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="Es aquí donde los móviles de última generación hacen posible desarrollar esta herramienta.Gracias a plataformas como Android, es posible crear aplicaciones móviles al gusto, que integren estas funcionalidades y permitan llevar a cabo tareas de mantenimiento y supervisión del sistema desde un terminal móvil personal." />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="La necesidad del ser humano de controlar su entorno y modificarlo en base a sus necesidades, y la búsqueda del hombre por conseguir una vida más cómoda y segura, son los pilares que empujan este proyecto." />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="492dp"
+        android:layout_height="86dp"
+        android:src="@drawable/upm" />
+</LinearLayout>
+
+</ScrollView>

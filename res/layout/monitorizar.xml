@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+     <TextView
+        android:id="@+id/monitor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="MONITORIZACIÓN"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    
+
+     <TextView
+        android:id="@+id/sensores"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#33BB33"
+        android:text="SENSORES"
+        android:textStyle="bold" />
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="TEMPERATURA(ºC): " />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#AA0000"
+            android:text="@string/temperatura" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Hum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="HUMEDAD(%): " />
+
+        <TextView
+            android:id="@+id/hum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#0000AA"
+            android:text="@string/humedad" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Air"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="CONTAMINACIÓN: " />
+
+        <ProgressBar
+            android:id="@+id/AirIndicator"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="@string/MaxAirIndicator"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ 		    android:indeterminate="false"
+            android:minHeight="20dp"
+        	android:minWidth="150dp"
+        	android:progress="1"
+        	android:background="@drawable/color_air_indicator"
+        	 />
+        
+    </TableRow>
+
+    <TextView
+        android:id="@+id/actuadores"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#3366AA"
+        android:text="ACTUADORES"
+        android:textStyle="bold" />
+    
+    
+     <TableRow>
+
+        <TextView
+            android:id="@+id/Calef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="CALEFACCIÓN: " />
+        
+        <TextView
+            android:id="@+id/calef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"            
+            android:text="@string/calef" />
+        
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Humidi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="HUMIDIFICADOR: " />
+        
+        <TextView
+            android:id="@+id/humidi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"            
+            android:text="@string/humidi" />
+        
+    </TableRow>   
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Vent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="NIVEL VENTILADOR: " />
+        
+        <TextView
+            android:id="@+id/vent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"            
+            android:text="@string/vent" />
+        
+    </TableRow> 
+    
+    
+    <TextView
+        android:id="@+id/alarmas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#BB3333"
+        android:text="ALARMAS"
+        android:textStyle="bold" />
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Atemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"           
+            android:text="TEMPERATURA: " />
+        
+          <TextView
+            android:id="@+id/atemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"            
+            android:text="@string/atemp" />
+        
+    </TableRow> 
+    
+     <TableRow>
+
+        <TextView
+            android:id="@+id/Ahum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="HUMEDAD: " />
+        
+          <TextView
+            android:id="@+id/ahum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"           
+            android:text="@string/ahum" />
+        
+    </TableRow> 
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Agas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="GAS: " />
+        
+          <TextView
+            android:id="@+id/agas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"            
+            android:text="@string/agas" />
+        
+    </TableRow>  
+               
+     <ImageButton
+         android:id="@+id/BtnRefresh"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:src="@drawable/refresh" />
+           
+</TableLayout>
+
+</ScrollView>

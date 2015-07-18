@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="center">
+
+	<TableLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:padding="10dip" >
+	
+		<TableRow
+		    android:gravity="center">
+		
+		    <ImageView
+		        android:id="@+id/loginEtsidi"
+		        android:layout_width="60dp"
+		        android:layout_height="50dp"
+		        android:src="@drawable/etsidi" />
+		    
+		    <ImageView
+		        android:id="@+id/loginArduino"
+		        android:layout_width="50dp"
+		        android:layout_height="60dp"
+		        android:src="@drawable/arduino" />
+		    
+		    <ImageView
+		        android:id="@+id/loginAndroid"
+		        android:layout_width="50dp"
+		        android:layout_height="70dp"
+		        android:src="@drawable/android" />
+		    
+
+		    
+		</TableRow>
+	
+	    <TextView
+	        android:id="@+id/TextViewUser"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+	        android:text="@string/usuario"
+	        android:textStyle="bold" />
+	
+	    <EditText
+	        android:id="@+id/TxtUsuario"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="text" />
+	
+	    <TextView
+	        android:id="@+id/TextViewPass"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/contrasena"
+	        android:textStyle="bold" />
+	
+	    <EditText
+	        android:id="@+id/TxtPassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="numberPassword" 
+		    android:maxLength="4" /> 
+	
+	    <LinearLayout
+	        android:layout_width="162dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <Button
+	            android:id="@+id/BtnLogin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="20dip"
+	            android:paddingRight="20dip"
+	            android:text="@string/login" />
+	
+	        <TextView
+	            android:id="@+id/LblMensaje"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="10dip"
+	            android:textStyle="bold" />
+	    </LinearLayout>
+	
+		<TableRow
+		    android:gravity="center">
+		    <TextView
+		        android:id="@+id/Welcome"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dip"
+		        android:textSize="20dp"
+				android:gravity="center"
+		        android:layout_marginTop="20dp"
+		        android:text="Proyecto ICRA"
+		        android:textStyle="bold"
+		        android:typeface="monospace"
+		        android:textColor="#009900"
+		         />
+		
+		    <ImageView
+		        android:id="@+id/logo"
+		        android:layout_width="64dp"
+		        android:layout_height="64dp"
+		        android:src="@drawable/ic_launcher" />
+	    
+	    </TableRow>
+	    
+	    <TextView
+	       android:id="@+id/Autor"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:paddingLeft="10dip"
+	       android:textSize="15dp"
+	       android:gravity="center"
+	       android:layout_marginTop="20dp"        
+	       android:text="Andrés Barroso García"
+	       android:textStyle="bold"
+	       android:typeface="monospace"
+	       android:textColor="#009900" />        
+		     
+	   <TableRow
+	       	    android:gravity="center"
+	       	    android:layout_marginTop="20dp">
+		
+			<Button
+			    android:id="@+id/BtnConectar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="20dip"
+	            android:paddingRight="20dip"
+			    android:text="Conectar" />		       
+		    
+		     <ImageView
+		         android:id="@+id/conexionServer"
+		         android:layout_width="40dp"
+		         android:layout_height="40dp"
+		         android:src="@drawable/check_fail"
+		         />    
+	   
+	   </TableRow>       
+	</TableLayout>
+</ScrollView>

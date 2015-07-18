@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+     
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="RANGOS DE ALARMAS"
+        android:textSize="25dp" 
+        android:textStyle="bold" />         
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp" 
+        android:text="Inserte 4 dígitos sin separador decimal"
+        android:textStyle="italic" />  
+    
+     <TextView
+        android:id="@+id/GAtemp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#BB4433"
+        android:text="TEMPERATURA (ºC)"
+        android:textStyle="bold" />
+
+       <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#F3C4C4"  
+        android:text="Ej. 2550 representa 25,50ºC"
+        android:textStyle="italic" />    
+     
+     
+    <TableRow>
+
+        <TextView
+            android:id="@+id/GALimInfTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Límite inferior: " />
+
+        <TextView
+            android:id="@+id/GAinftemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#AA0000"
+            android:text="@string/GAinftemp" />
+        
+	    <EditText
+	        android:id="@+id/edit_GAinftemp"
+   			android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:maxLength="4"
+	        android:inputType="number" />
+	    
+	    <ImageButton
+	        android:id="@+id/saveGAinftemp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/save" />	    
+    
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/GALimSupTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Límite superior: " />
+
+        <TextView
+            android:id="@+id/GAsuptemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#AA0000"
+            android:text="@string/GAsuptemp" />
+        
+	    <EditText
+	        android:id="@+id/edit_GAsuptemp"
+   			android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:maxLength="4"
+	        android:inputType="number" />
+	    
+	    <ImageButton
+	        android:id="@+id/saveGAsuptemp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/save" />	    
+	    
+    </TableRow>
+
+
+
+    <TextView
+        android:id="@+id/GAhum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#3366AA"
+        android:text="HUMEDAD (%)"
+        android:textStyle="bold" />
+    
+ 	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#9EBEF5"  
+        android:text="Ej. 5500 representa 55,00%"
+        android:textStyle="italic" />   
+    
+     <TableRow>
+
+        <TextView
+            android:id="@+id/GALimInfHum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Límite inferior: " />
+
+        <TextView
+            android:id="@+id/GAinfhum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#0000AA"
+            android:text="@string/GAinfhum" />
+        
+	    <EditText
+	        android:id="@+id/edit_GAinfhum"
+   			android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:maxLength="4"
+	        android:inputType="number" />
+	    
+		<ImageButton
+	        android:id="@+id/saveGAinfhum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/save" />	    
+	    
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/GALimSupHum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Límite superior: " />
+
+        <TextView
+            android:id="@+id/GAsuphum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#0000AA"           
+            android:text="@string/GAsuphum" />
+        
+	    <EditText
+	        android:id="@+id/edit_GAsuphum"
+   			android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:maxLength="4"
+	        android:inputType="number" />
+	    
+	    <ImageButton
+	        android:id="@+id/saveGAsuphum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/save" />
+    </TableRow>
+    
+ <!--   
+    <TextView
+        android:id="@+id/GAaire"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#BB3333"
+        android:text="CALIDAD AIRE (1-10)"
+        android:textStyle="bold" />
+    
+     <TableRow>
+
+        <TextView
+            android:id="@+id/GALimInfAir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Nivel mínimo: " />
+
+        <TextView
+            android:id="@+id/GAinfair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="@string/GAinfair" />
+     
+	    <EditText
+	        android:id="@+id/edit_GAinfair"
+   			android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:inputType="text" />
+    </TableRow>
+
+      --> 
+         
+    
+</TableLayout>
+
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+     <TextView
+        android:id="@+id/actuadores"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="CONTROL DE VENTILACIÓN"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+     
+	<TableRow >
+    
+     <ImageView
+        android1:id="@+id/imageView1"
+        android1:layout_width="40dp"
+        android1:layout_height="60dp"
+        android1:src="@drawable/vent"
+        android1:layout_marginTop="10dp" />   
+        
+	</TableRow>
+	    
+    <TableRow>
+    
+    <TextView
+        android:id="@+id/vel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#33BB33"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="VELOCIDAD DE VENTILACIÓN: "
+        android:textStyle="bold" />
+
+     <TextView
+        android:id="@+id/EstVent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#33BB33"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/EstVent" />
+    </TableRow>    
+    
+    <RadioGroup
+        android1:id="@+id/setvel"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioButton            
+            android1:id="@+id/vel0"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Velocidad 0" />
+        
+        <RadioButton            
+            android1:id="@+id/vel1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Velocidad 1" />
+
+        <RadioButton
+            android1:id="@+id/vel2"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Velocidad 2" />
+
+        <RadioButton
+            android1:id="@+id/vel3"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Velocidad 3" />
+        <RadioButton
+            android1:id="@+id/vel4"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Velocidad 4" />
+    </RadioGroup>
+</TableLayout>
+</ScrollView>

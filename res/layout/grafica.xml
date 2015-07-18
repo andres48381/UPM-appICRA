@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<TableLayout
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical" >
+
+    <TextView
+      android:id="@+id/actuadores"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="10dp"
+      android:text="VISOR DE GRÁFICAS"
+      android:textSize="20dp"
+      android:textStyle="bold" />   
+    
+    
+    <TableRow
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+
+        <TextView
+            android:id="@+id/TxtVwdate0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="FECHA INICIAL: " />
+
+        <EditText
+            android:id="@+id/EdtTxtDate0"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="8" />
+
+        <TextView
+            android:id="@+id/TxtVwFormatDate0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+		    android:textSize="10dp"
+            android:text="YYYYMMDD" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TxtVwtime0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="HORA INICIAL: " />
+
+        <EditText
+            android:id="@+id/EdtTxtTime0"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <TextView
+            android:id="@+id/TxtVwFormatTime0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+		    android:textSize="10dp"
+            android:text="HHMMSS" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TxtVwdate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="FECHA FINAL: " />
+
+        <EditText
+            android:id="@+id/EdtTxtDate1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="8" />
+
+        <TextView
+            android:id="@+id/TxtVwFormatDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+		    android:textSize="10dp"
+            android:text="YYYYMMDD" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/TxtVwtime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="HORA FINAL: " />
+
+        <EditText
+            android:id="@+id/EdtTxtTime1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <TextView
+            android:id="@+id/TxtVwFormatTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+		    android:textSize="10dp" 
+            android:text="HHMMSS" />
+    </TableRow>
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+		    android:textSize="10dp" 
+            android:text="Pulsar para obtener Fecha/Hora actual" />   
+             
+	    <ImageButton
+	        android:id="@+id/datetimenow"
+	        android:layout_width="20dp"
+	        android:layout_height="60dp"
+	        android:layout_marginBottom="10dp"
+	        android:onClick="OnClickTimeNow"
+	        android:src="@drawable/date" />      
+    
+
+    <Spinner
+        android:id="@+id/CmbOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/CmbOpciones2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/TxtVwTrazar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="10dp"
+        android:text="@string/stateTrazar" />
+    <TableRow>
+	    	    
+   		<ImageView
+	        android:id="@+id/bd"
+	        android:layout_width="60dp"
+	        android:layout_height="50dp"
+	        android:src="@drawable/bd" />
+   		   		<ImageView
+	        android:id="@+id/graphic"
+	        android:layout_width="60dp"
+	        android:layout_height="50dp"
+	        android:src="@drawable/graphic" /> 
+      <Button
+        android:id="@+id/BtnTrazar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Trazar" /> 		
+  		
+	    
+    </TableRow>
+
+</TableLayout>
+
+</ScrollView>

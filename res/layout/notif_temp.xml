@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+  
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ALARMA DE TEMPERATURA"
+        android:textSize="20dp"
+        android:textStyle="bold" /> 
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="El nivel de temperatura del invernadero no es el adecuado. Contacte inmediatamente con el personal."
+        android:textStyle="bold" /> 
+        
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="20dp" 
+        android:gravity="center"
+        android:text="TEMPERATURA (ºC)"
+        android:textSize="25dp"
+        android:textStyle="bold" 
+        android:textColor="#DD1100"/> 
+        
+     <TextView
+        android:id="@+id/notifTemp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#AA0000"
+        android:textSize="25dp"
+    	android:gravity="center"
+        android:text="@string/notifTemp" /> 
+         
+       <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="20dp" 
+        android:gravity="center"
+        android:text="RANGO DE ALARMA (ºC)"
+        android:textSize="25dp"
+        android:textStyle="bold" 
+        android:textColor="#DD1100"/>   
+         
+	   <TableLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+           
+        	<TableRow
+        	    android:gravity="center">
+	
+	
+	        <TextView
+	            android:id="@+id/notifGAinftemp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:padding="10dp"
+	            android:textStyle="bold"
+		        android:textSize="25dp"
+	            android:textColor="#AA0000"
+	            android:text="@string/notifGAinftemp" />
+	        
+	       <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:layout_marginTop="20dp" 
+		        android:gravity="center"
+		        android:text="..."
+     			android:textSize="25dp"
+		        android:textStyle="bold" 
+		        android:textColor="#DD1100"/>  	        
+	
+	        <TextView
+	            android:id="@+id/notifGAsuptemp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:padding="10dp"
+	            android:textStyle="bold"
+    		    android:textSize="25dp"
+	            android:textColor="#AA0000"
+	            android:text="@string/notifGAsuptemp" />	        
+	        
+		    <ImageView
+		        android:id="@+id/saveRAinftemp"
+		        android:layout_width="62dp"
+		        android:layout_height="92dp"
+		        android:src="@drawable/alarma_temp" />
+    
+    		</TableRow>
+    	</TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"  >
+	     
+	<TableLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background='#33FF33' >
+	    <TableRow>
+			<TextView
+			    android:id="@+id/modo"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/modo"
+			    android:padding="10dp"
+			    android:gravity="right"
+			    android:textStyle="bold"
+			    android:layout_marginBottom="15dp" />  
+		
+		     <ImageView
+		        android:id="@+id/conexionMenuModerador"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+		        android:src="@drawable/check_fail"
+		        />    
+	    </TableRow>    
+	</TableLayout>
+	
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="wrap_content"
+	    android:text="Ficha plantación"
+	    android:onClick="OnClickRegister" />    
+	    
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="wrap_content"
+	    android:text="Monitorizar ICRA"
+	    android:onClick="OnClickMonitor" /> 
+	    
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="wrap_content"
+	    android:text="Rangos Actuadores"
+	    android:onClick="OnClickRangos" /> 
+	
+	    
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="wrap_content"
+	    android:text="Rangos Alarmas"
+	    android:onClick="OnClickAlarmas" /> 
+	
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="wrap_content"
+	    android:text="Visor Gráficas" 
+	    android:onClick="OnClickGrafica"/>  
+	
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="wrap_content"
+	    android:text="Control Ventilación"
+	    android:onClick="OnClickVentilador" />   
+	    
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="wrap_content"
+	    android:text="Seta Emergencia" 
+	    android:onClick="OnClickPower" />  
+	    
+	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_gravity="center"
+	    android:layout_height="wrap_content"
+	    android:text="ICRA ©"
+	    android:onClick="OnClickCredits" /> 
+	
+	</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andres.usingintent"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+  	<uses-permission android:name="android.permission.INTERNET"/>
+  	<uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+     <activity
+        android:name="com.andres.usingintent.Login"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>           
+          
+       <activity
+         android:label="Menú"
+         android:name=".Menu" >
+         <intent-filter>
+             <action android:name="com.andres.usingintent.Menu" />
+
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+      	</activity>
+      	
+
+               
+        <activity
+          android:label="Datos técnicos del cúltivo"
+          android:name=".SecondActivity" >
+          <intent-filter>
+              <action android:name="com.andres.usingintent.SecondActivity" />
+
+              <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+        </activity>
+        
+        
+        <activity
+           android:label="Monitorización"
+           android:name=".Monitorizacion" >
+           <intent-filter>
+               <action android:name="com.andres.usingintent.Monitorizacion" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+        </activity>
+        
+        <activity
+           android:label="Grafica"
+           android:name=".Grafica" >
+           <intent-filter>
+               <action android:name="com.andres.usingintent.Grafica" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+        </activity>     
+        
+          <activity
+           android:label="Trazado"
+           android:name=".Trazado" >
+           <intent-filter>
+               <action android:name="com.andres.usingintent.Trazado" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+        </activity>        
+        
+  		<activity
+           android:label="Rangos"
+           android:name=".Rangos" >
+           <intent-filter>
+               <action android:name="com.andres.usingintent.Rangos" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="Gestor de Alarmas"
+            android:name=".Alarmas" >
+            <intent-filter>
+                <action android:name="com.andres.usingintent.Alarmas" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:label="Ventilacion"
+            android:name=".Ventilacion" >
+            <intent-filter>
+                <action android:name="com.andres.usingintent.Ventilacion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>   
+        
+         <activity
+            android:label="Power"
+            android:name=".Power" >
+            <intent-filter>
+                <action android:name="com.andres.usingintent.Power" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    
+         <activity
+            android:label="Credits"
+            android:name=".Credits" >
+            <intent-filter>
+                <action android:name="com.andres.usingintent.Credits" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <activity
+            android:label="Detalles de notificación"
+            android:name=".NotificationView" >
+            <intent-filter>
+                <action android:name="com.andres.usingintent.Notification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>         
+         
+    </application>
+</manifest>

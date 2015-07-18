@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+     <TextView
+        android:id="@+id/actuadores"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="RANGO DE ACTUADORES"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+     
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp" 
+        android:text="Inserte 4 dígitos sin separador decimal"
+        android:textStyle="italic" />  
+
+     <TextView
+        android:id="@+id/RAtemp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#BB4433"
+        android:text="CALEFACCIÓN (ºC)"
+        android:textStyle="bold" />
+     
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#F3C4C4"  
+        android:text="Ej. 2550 representa 25,50ºC"
+        android:textStyle="italic" />
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/RALimInfTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Límite inferior: " />
+
+        <TextView
+            android:id="@+id/RAinftemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#AA0000"
+            android:text="@string/RAinftemp" />
+        
+	    <EditText
+	        android:id="@+id/edit_RAinftemp"
+   			android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:maxLength="4"
+	        android:inputType="number" />
+
+	    <ImageButton
+	        android:id="@+id/saveRAinftemp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/save" />
+    
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/RALimSupTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Límite superior: " />
+
+        <TextView
+            android:id="@+id/RAsuptemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#AA0000"
+            android:text="@string/RAsuptemp" />
+        
+	    <EditText
+	        android:id="@+id/edit_RAsuptemp"
+   			android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:maxLength="4"
+	        android:inputType="number" />
+
+	    <ImageButton
+	        android:id="@+id/saveRAsuptemp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/save" />
+	    
+    </TableRow>
+
+
+
+    <TextView
+        android:id="@+id/RAhum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#3366AA"
+        android:text="HUMIDIFICADOR (%)"
+        android:textStyle="bold" />
+    
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="#9EBEF5"  
+        android:text="Ej. 5500 representa 55,00%"
+        android:textStyle="italic" />   
+    
+    
+     <TableRow>
+
+        <TextView
+            android:id="@+id/RALimInfHum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Límite inferior: " />
+
+        <TextView
+            android:id="@+id/RAinfhum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#0000AA"
+            android:text="@string/RAinfhum" />
+        
+	    <EditText
+	        android:id="@+id/edit_RAinfhum"
+   			android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:maxLength="4"	        
+	        android:inputType="number" />
+
+	    <ImageButton
+	        android:id="@+id/saveRAinfhum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/save" />
+
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:id="@+id/RALimSupHum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Límite superior: " />
+
+        <TextView
+            android:id="@+id/RAsuphum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#0000AA"
+            android:text="@string/RAsuphum" />
+        
+	    <EditText
+	        android:id="@+id/edit_RAsuphum"
+   			android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:maxLength="4"
+	        android:inputType="number" />
+
+	    <ImageButton
+	        android:id="@+id/saveRAsuphum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/save" />
+
+    </TableRow>
+         
+    
+</TableLayout>
+
+</ScrollView>

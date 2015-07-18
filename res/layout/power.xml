@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+     <TextView
+        android:id="@+id/actuadores"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SETA DE EMERGENCIA"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/corte"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#33BB33"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Corte del suministro eléctrico"
+        android:textStyle="bold" />  
+    
+    
+    <TextView
+        android:id="@+id/seta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="@string/Seta"
+        android:textStyle="bold" />         
+      
+      
+
+    <ImageView
+        android1:id="@+id/ImgVwseta"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:src="@drawable/seta" 
+        />
+
+</TableLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >    
+  
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ALARMA DE HUMEDAD"
+        android:textSize="20dp"
+        android:textStyle="bold" /> 
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="El nivel de humedad del invernadero no es el adecuado. Contacte inmediatamente con el personal."
+        android:textStyle="bold" /> 
+        
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="20dp" 
+        android:gravity="center"
+        android:text="HUMEDAD (%)"
+        android:textSize="25dp"
+        android:textStyle="bold" 
+        android:textColor="#0011DD"/> 
+        
+     <TextView
+        android:id="@+id/notifHum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#0000AA"
+        android:textSize="25dp"
+    	android:gravity="center"
+        android:text="@string/notifHum" /> 
+         
+       <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="20dp" 
+        android:gravity="center"
+        android:text="RANGO DE ALARMA (%)"
+        android:textSize="25dp"
+        android:textStyle="bold" 
+        android:textColor="#0011DD"/>   
+         
+	   <TableLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+           
+        	<TableRow
+        	    android:gravity="center">
+	
+	
+	        <TextView
+	            android:id="@+id/notifGAinfhum"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:padding="10dp"
+	            android:textStyle="bold"
+		        android:textSize="25dp"
+	            android:textColor="#0000AA"
+	            android:text="@string/notifGAinfhum" />
+	        
+	       <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:layout_marginTop="20dp" 
+		        android:gravity="center"
+		        android:text="..."
+     			android:textSize="25dp"
+		        android:textStyle="bold" 
+		        android:textColor="#0011DD"/>  	        
+	
+	        <TextView
+	            android:id="@+id/notifGAsuphum"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:padding="10dp"
+	            android:textStyle="bold"
+    		    android:textSize="25dp"
+	            android:textColor="#0000AA"
+	            android:text="@string/notifGAsuphum" />	        
+	        
+		    <ImageView
+		        android:id="@+id/saveRAinfhum"
+		        android:layout_width="62dp"
+		        android:layout_height="92dp"
+		        android:src="@drawable/alarma_hum" />
+    
+    		</TableRow>
+    	</TableLayout>
+
+</LinearLayout>
