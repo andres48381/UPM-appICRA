@@ -6,4 +6,4 @@ Software: ADT Eclipse
 
 API: 21
 
-![ic_launcher.png](https://bitbucket.org/repo/a46y5q/images/2331207080-ic_launcher.png height:300 width:100)
+![android.png](https://bitbucket.org/repo/a46y5q/images/1200391189-android.png)
